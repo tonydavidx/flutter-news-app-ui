@@ -31,13 +31,13 @@ For the record, 2030 is a date we see from many brands in the automotive industr
      """,
     category: 'Technology',
     title: 'Fiat Will Transition to All Electric Vehicles Starting in 2025',
-    author: 'CORY GUNTHER ',
+    author: 'Cory Gunther ',
     discription:
         ' Fiat plans to go all-electric within the next decade, starting by transitioning several vehicles to electric-only in 2025.',
     featuredImage:
         'https://cdn.motor1.com/images/mgl/erZJ8/s1/2020-fiat-500e-ev.jpg',
     views: 254,
-    time: DateTime(2021, 06, 07, 1, 14),
+    time: DateTime(2021, 06, 09, 1, 14),
   ),
   Article(
     content: """
@@ -125,7 +125,7 @@ That means the dangers of being overworked are real for most, if not all of us. 
     featuredImage:
         "https://images.unsplash.com/photo-1601581987809-a874a81309c9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
     views: 218,
-    time: DateTime(2020, 6, 2, 1, 45),
+    time: DateTime(2021, 6, 2, 1, 45),
   ),
   Article(
     title:
@@ -153,7 +153,7 @@ The researchers also found that the positive impact of physical activity wasn’
     featuredImage:
         "https://i0.wp.com/post.healthline.com/wp-content/uploads/2021/05/Couple_Watching_TV_1296x728-header-1296x729.jpg?w=1575%20750w",
     views: 958,
-    time: DateTime(2020, 06, 7, 1, 52),
+    time: DateTime(2021, 06, 7, 1, 52),
   ),
   Article(
     title:
@@ -183,7 +183,7 @@ U.S. officials are asking private companies to be more vigilant and transparent 
     featuredImage:
         "https://images.unsplash.com/photo-1556046905-2508233aea86?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
     views: 754,
-    time: DateTime(2020, 06, 07, 2, 2),
+    time: DateTime(2021, 06, 07, 2, 2),
   ),
   Article(
     title: 'Biden calls for nations to boost their economies',
@@ -207,7 +207,7 @@ The message from Treasury Secretary Janet Yellen here in London - which will be 
     featuredImage:
         "https://ichef.bbci.co.uk/news/976/cpsprodpb/0926/production/_118824320_joe-biden1.jpg",
     views: 461,
-    time: DateTime(2020, 6, 7, 7, 29),
+    time: DateTime(2021, 6, 7, 7, 29),
   ),
   Article(
     title: "Why Kim Jong-un is waging war on slang, jeans and foreign films",
@@ -242,7 +242,7 @@ Recently, Mr Kim wrote a letter in state media calling on the country's Youth Le
     featuredImage:
         "https://ichef.bbci.co.uk/news/976/cpsprodpb/8EB6/production/_118643563_nk_foreign_media_law_2_illustration.jpg",
     views: 752,
-    time: DateTime(2020, 6, 7, 19, 23),
+    time: DateTime(2021, 6, 7, 19, 23),
   ),
 ];
 
@@ -273,5 +273,5 @@ According to Blue Origin's website the company plans to launch its passengers mo
   featuredImage:
       "https://ichef.bbci.co.uk/news/976/cpsprodpb/6EE8/production/_118829382_067148600.jpg",
   views: 15,
-  time: DateTime(2020, 6, 7, 19, 41),
+  time: DateTime(2021, 6, 7, 19, 41),
 );
