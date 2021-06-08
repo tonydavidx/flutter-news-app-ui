@@ -22,11 +22,11 @@ class HomePage extends StatelessWidget {
                         image: NetworkImage(newsOfTheDay.featuredImage),
                         fit: BoxFit.cover,
                         colorFilter: ColorFilter.mode(
-                          Colors.black26,
+                          Colors.black54,
                           BlendMode.darken,
                         )),
                     borderRadius: BorderRadius.vertical(
-                      bottom: Radius.circular(18),
+                      bottom: Radius.circular(26),
                     ),
                   ),
                 ),
@@ -35,6 +35,7 @@ class HomePage extends StatelessWidget {
                     horizontal: 20,
                   ),
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Padding(
                         padding: const EdgeInsets.only(
@@ -57,29 +58,109 @@ class HomePage extends StatelessWidget {
                                 child: Text(
                                   'News of the day',
                                   style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.w600),
+                                    color: Colors.white,
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.w600,
+                                  ),
                                 ),
                               ),
                             ),
                           ),
                         ),
                       ),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 16),
+                        child: Text(
+                          newsOfTheDay.title,
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 24,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                      Row(
+                        children: [
+                          Text(
+                            'Lear more',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 16,
+                            ),
+                          ),
+                          SizedBox(
+                            width: 12,
+                          ),
+                          Icon(
+                            Icons.arrow_forward_outlined,
+                            color: Colors.white,
+                          )
+                        ],
+                      )
                     ],
                   ),
                 ),
               ],
             ),
           ),
-          SliverFixedExtentList(
-            delegate: SliverChildBuilderDelegate((context, index) {
-              return Container(
-                color: Colors.amber[100 * (index % 9)],
-                child: Text('Hello'),
-              );
-            }),
-            itemExtent: 50.0,
+          SliverToBoxAdapter(
+            child: Padding(
+              padding: const EdgeInsets.only(top: 30, left: 30),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    children: [
+                      Text(
+                        'Breaking News',
+                        style: TextStyle(
+                          fontSize: 26,
+                          fontWeight: FontWeight.w800,
+                        ),
+                      ),
+                      SizedBox(
+                        width: 100,
+                      ),
+                      Text(
+                        'More',
+                        style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.w800,
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          ),
+          SliverToBoxAdapter(
+            child: Container(
+              height: 300,
+              color: Colors.amber,
+              child: ListView.builder(
+                itemCount: 20,
+                scrollDirection: Axis.horizontal,
+                shrinkWrap: true,
+                itemBuilder: (context, index) => Column(
+                  children: [
+                    Container(
+                      height: 200,
+                      width: 200,
+                      decoration: BoxDecoration(
+                        color: Colors.black,
+                        image: DecorationImage(
+                          image: NetworkImage(
+                              'https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510__340.jpg'),
+                        ),
+                      ),
+                    ),
+                    Text('data'),
+                  ],
+                ),
+              ),
+            ),
           )
         ],
       ),
