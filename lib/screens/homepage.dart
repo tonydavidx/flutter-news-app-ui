@@ -1,12 +1,13 @@
 import 'dart:ui';
-
+import '../widgets/widget.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:jiffy/jiffy.dart';
 import '../model/news.dart';
+import '../screens/screen.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -105,119 +106,28 @@ class HomePage extends StatelessWidget {
               ],
             ),
           ),
-          SliverToBoxAdapter(
-            child: Padding(
-              padding: const EdgeInsets.only(top: 30, left: 20),
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Row(
-                    children: [
-                      Text(
-                        'Breaking News',
-                        style: TextStyle(
-                          fontSize: 26,
-                          fontWeight: FontWeight.w800,
-                        ),
-                      ),
-                      SizedBox(
-                        width: 100,
-                      ),
-                      Text(
-                        'More',
-                        style: TextStyle(
-                          fontSize: 18,
-                          fontWeight: FontWeight.w800,
-                        ),
-                      ),
-                    ],
-                  ),
-                ],
-              ),
-            ),
-          ),
-          SliverToBoxAdapter(
-            child: Container(
-              height: 360,
-              // color: Colors.amber,
-              child: ListView.builder(
-                  itemCount: articleList.length,
-                  scrollDirection: Axis.horizontal,
-                  shrinkWrap: true,
-                  itemBuilder: (context, index) {
-                    final articles = articleList[index];
-                    return Container(
-                      width: 290,
-                      child: Padding(
-                        padding: const EdgeInsets.all(16.0),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Container(
-                              height: 160,
-                              width: 260,
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(18),
-                                image: DecorationImage(
-                                  image: NetworkImage(
-                                    articles.featuredImage,
-                                  ),
-                                  fit: BoxFit.cover,
-                                ),
-                              ),
-                            ),
-                            SizedBox(
-                              height: 10,
-                            ),
-                            Padding(
-                              padding:
-                                  const EdgeInsets.symmetric(horizontal: 8),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    articles.title,
-                                    style: TextStyle(
-                                      color: Colors.black87,
-                                      fontSize: 20,
-                                      fontWeight: FontWeight.w700,
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    height: 8,
-                                  ),
-                                  Text(
-                                    Jiffy(articles.time).fromNow().toString(),
-                                    style: TextStyle(color: Colors.grey[500]),
-                                  ),
-                                  SizedBox(
-                                    height: 8,
-                                  ),
-                                  Text(
-                                    'by ' + articles.author,
-                                    style: TextStyle(color: Colors.grey[500]),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    );
-                  }),
-            ),
-          ),
-          SliverToBoxAdapter(
-            child: Container(
-              height: 300,
-              color: Colors.amber,
-              child: Text('For You'),
-            ),
-          )
+          buildBreakingNewsContainer(),
+          buildArticlesForYou()
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
+          onTap: (value) {
+            if (value == 1) {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (BuildContext context) => SearchPage(),
+                ),
+              );
+            } else if (value == 0) {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => HomePage(),
+                ),
+              );
+            }
+          },
           currentIndex: 0,
           showSelectedLabels: false,
           showUnselectedLabels: false,
@@ -226,15 +136,15 @@ class HomePage extends StatelessWidget {
           items: [
             BottomNavigationBarItem(
               label: 'Home',
-              icon: Icon(Icons.home),
+              icon: Icon(CupertinoIcons.house_fill),
             ),
             BottomNavigationBarItem(
               label: 'Hello',
-              icon: Icon(Icons.search),
+              icon: Icon(CupertinoIcons.search),
             ),
             BottomNavigationBarItem(
               label: 'Hello',
-              icon: Icon(Icons.person),
+              icon: Icon(CupertinoIcons.person_fill),
             ),
           ]),
     );
