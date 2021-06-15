@@ -275,3 +275,6 @@ According to Blue Origin's website the company plans to launch its passengers mo
   views: 15,
   time: DateTime(2021, 6, 7, 19, 41),
 );
+
+Iterable<Article> healthArticles =
+    articleList.where((health) => health.category.contains('Health'));

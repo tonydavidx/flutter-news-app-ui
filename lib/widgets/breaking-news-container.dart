@@ -1,6 +1,7 @@
 import '../model/news.dart';
 import 'package:flutter/material.dart';
 import 'package:jiffy/jiffy.dart';
+import '../paltte.dart';
 
 SliverToBoxAdapter buildBreakingNewsContainer() {
   return SliverToBoxAdapter(
@@ -14,10 +15,7 @@ SliverToBoxAdapter buildBreakingNewsContainer() {
             children: [
               Text(
                 'Breaking News',
-                style: TextStyle(
-                  fontSize: 26,
-                  fontWeight: FontWeight.w800,
-                ),
+                style: kBoldHeading,
               ),
               SizedBox(
                 width: 100,

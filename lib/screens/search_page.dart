@@ -1,6 +1,9 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import './screen.dart';
+import 'package:news_app_ui/model/news.dart';
+import 'package:news_app_ui/paltte.dart';
+import '../widgets/widget.dart';
 
 class SearchPage extends StatelessWidget {
   const SearchPage({Key? key}) : super(key: key);
@@ -9,62 +12,156 @@ class SearchPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: Drawer(),
-      body: CustomScrollView(
-        slivers: [
-          SliverAppBar(
-            backgroundColor: Colors.transparent,
-            iconTheme: IconThemeData(color: Colors.black),
-          ),
-          SliverToBoxAdapter(
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text('Discover'),
+      body: DefaultTabController(
+        length: 5,
+        child: NestedScrollView(
+            headerSliverBuilder: (context, value) => [
+                  SliverAppBar(
+                    backgroundColor: Colors.transparent,
+                    leading: Builder(
+                      builder: (context) => IconButton(
+                        onPressed: () {
+                          Scaffold.of(context).openDrawer();
+                        },
+                        icon: Icon(
+                          Icons.menu,
+                          color: Colors.black87,
+                          size: 30.0,
+                        ),
+                      ),
+                    ),
+                  ),
+                  SliverToBoxAdapter(
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 20),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          SizedBox(
+                            height: 50,
+                          ),
+                          Discover(),
+                          SizedBox(
+                            height: 50,
+                          ),
+                          SearchBox(),
+                          SizedBox(
+                            height: 30,
+                          ),
+                          Stack(
+                            fit: StackFit.passthrough,
+                            alignment: Alignment.bottomCenter,
+                            children: [
+                              Container(
+                                decoration: BoxDecoration(
+                                  border: Border(
+                                    bottom: BorderSide(
+                                        color: Colors.black26, width: 2.0),
+                                  ),
+                                ),
+                              ),
+                              TabBar(
+                                isScrollable: true,
+                                indicatorColor: Colors.black,
+                                unselectedLabelColor: Colors.black26,
+                                labelColor: Colors.black,
+                                labelStyle: kBoldHeading,
+                                tabs: [
+                                  Tab(
+                                    icon: Text(
+                                      'Health',
+                                    ),
+                                  ),
+                                  Tab(
+                                    icon: Text(
+                                      'Politics',
+                                    ),
+                                  ),
+                                  Tab(
+                                    icon: Text(
+                                      'Art',
+                                    ),
+                                  ),
+                                  Tab(
+                                    icon: Text(
+                                      'Food',
+                                    ),
+                                  ),
+                                  Tab(
+                                    icon: Text(
+                                      'Science',
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                          SizedBox(
+                            height: 30,
+                          )
+                        ],
+                      ),
+                    ),
+                  )
                 ],
-              ),
-            ),
-          )
-        ],
+            body: TabBarView(
+              children: [
+                // ListView.builder(
+                //     itemCount: 1,
+                //     itemBuilder: (context, index) {
+                //       healthArticles.forEach((element) => print(element.title));
+                //       return articleList[index].category == 'Health'
+                //           ? Text(articleList[index].title)
+                //           : Text('No articles');
+                //     }),
+
+                Text('data'),
+                Text('data'),
+                Text('data'),
+                Text('data'),
+              ],
+            )),
       ),
-      bottomNavigationBar: BottomNavigationBar(
-          onTap: (value) {
-            if (value == 1) {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (BuildContext context) => SearchPage(),
-                ),
-              );
-            } else if (value == 0) {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => HomePage(),
-                ),
-              );
-            }
-          },
-          currentIndex: 1,
-          showSelectedLabels: false,
-          showUnselectedLabels: false,
-          elevation: 16,
-          iconSize: 30.0,
-          items: [
-            BottomNavigationBarItem(
-              label: 'Home',
-              icon: Icon(CupertinoIcons.house_fill),
-            ),
-            BottomNavigationBarItem(
-              label: 'Hello',
-              icon: Icon(CupertinoIcons.search),
-            ),
-            BottomNavigationBarItem(
-              label: 'Hello',
-              icon: Icon(CupertinoIcons.person_fill),
-            ),
-          ]),
+// body: CustomScrollView(
+//   slivers: [
+//     SliverAppBar(
+//       automaticallyImplyLeading: false,
+//       leading: Builder(
+//         builder: (context) => IconButton(
+//           onPressed: () {
+//             Scaffold.of(context).openDrawer();
+//           },
+//           icon: Icon(
+//             Icons.menu,
+//             size: 30,
+//             color: Colors.black87,
+//           ),
+//         ),
+//       ),
+//       backgroundColor: Colors.transparent,
+//     ),
+//     SliverToBoxAdapter(
+//       child: Padding(
+//         padding: const EdgeInsets.symmetric(horizontal: 18),
+//         child: Column(
+//           crossAxisAlignment: CrossAxisAlignment.start,
+//           children: [
+//             SizedBox(
+//               height: 60,
+//             ),
+//             const Discover(),
+//             SizedBox(
+//               height: 25,
+//             ),
+//             const SearchBox(),
+//             // const ArticleByCategory()
+//           ],
+//         ),
+//       ),
+//     )
+//   ],
+// ),
+// bottomNavigationBar: MyBottomNavigation(),
     );
   }
 }
