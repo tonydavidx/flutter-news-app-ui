@@ -23,6 +23,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  collection: ^1.15.0
   cupertino_icons: ^1.0.2
   jiffy: ^4.1.0
 

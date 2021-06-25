@@ -13,7 +13,7 @@ class SearchPage extends StatelessWidget {
     return Scaffold(
       drawer: Drawer(),
       body: DefaultTabController(
-        length: 5,
+        length: 4,
         child: NestedScrollView(
             headerSliverBuilder: (context, value) => [
                   SliverAppBar(
@@ -84,11 +84,6 @@ class SearchPage extends StatelessWidget {
                                   ),
                                   Tab(
                                     icon: Text(
-                                      'Food',
-                                    ),
-                                  ),
-                                  Tab(
-                                    icon: Text(
                                       'Science',
                                     ),
                                   ),
@@ -106,16 +101,11 @@ class SearchPage extends StatelessWidget {
                 ],
             body: TabBarView(
               children: [
-                // ListView.builder(
-                //     itemCount: 1,
-                //     itemBuilder: (context, index) {
-                //       healthArticles.forEach((element) => print(element.title));
-                //       return articleList[index].category == 'Health'
-                //           ? Text(articleList[index].title)
-                //           : Text('No articles');
-                //     }),
-
-                Text('data'),
+                ListView.builder(
+                    itemCount: 1,
+                    itemBuilder: (context, index) {
+                      return Text('1');
+                    }),
                 Text('data'),
                 Text('data'),
                 Text('data'),

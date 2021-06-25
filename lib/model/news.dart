@@ -244,6 +244,153 @@ Recently, Mr Kim wrote a letter in state media calling on the country's Youth Le
     views: 752,
     time: DateTime(2021, 6, 7, 19, 23),
   ),
+  Article(
+    title: "Capitol riot: Democrats set up committee to probe 6 January attack",
+    author: "BBC",
+    category: "Politics",
+    content: """
+      Mrs Pelosi said the Democratic-led committee would aim to "establish the truth of that day and ensure that an attack of that kind cannot happen".
+
+The move comes after Senate Republicans blocked a bill to establish a bipartisan commission into the attack.
+
+Allies of former President Donald Trump said a commission was not necessary.
+
+His supporters stormed Congress in Washington DC on 6 January in a failed bid to overturn the certification of Democratic President Joe Biden's election victory in November.
+
+The riot left five dead, including a Capitol police officer.
+
+The assault led to the political impeachment and acquittal of Republican Mr Trump, who was accused by lawmakers of inciting the riot.
+
+What will the committee do?
+It will "investigate and report on the facts and the causes of the attack and it will report recommendations for the prevention of any future attack," Mrs Pelosi said at a news conference on Thursday.
+
+"The timetable will be as long as it takes," Mrs Pelosi said.
+
+The structure, powers and members of the committee will be announced at a later date, she said.
+
+The committee will be controlled by Democratic lawmakers in the House of Representatives, the lower legislative chamber of Congress.
+
+Mrs Pelosi said she and her Democratic colleagues "see this as complementary, not instead of" an independent commission into the events of 6 January.
+
+She had hoped to avoid forming a committee that put Democrats in charge of the investigation.
+
+It is not clear how much support the investigation will receive among House Republicans, who may see it as an overtly political process.
+
+Earlier this week, Republican House Minority Leader Kevin McCarthy said whatever decision Mrs Pelosi made about a committee would be "political".
+
+This charge of partisanship is why Democratic lawmakers had sought to legislate for an independent investigation modelled on the commission into the September 11 attacks on the US in 2001.
+
+Democrats argued that forming a commission would prevent any repeat of a similar invasion on the Capitol.
+
+However, many Republicans fear an investigation could be used to damage them politically before important 2022 congressional elections, known as the midterms.
+      """,
+    discription:
+        "Democratic House Speaker Nancy Pelosi has announced the creation of a committee to investigate the Capitol Hill riot in January this year.",
+    featuredImage:
+        "https://ichef.bbci.co.uk/news/976/cpsprodpb/B228/production/_119080654_gettyimages-1230455457-594x594.jpg",
+    views: 858,
+    time: DateTime(2021, 24, 06, 23, 33),
+  ),
+  Article(
+    title:
+        "1,800-Year-Old Statue Found in Ancient “City of the Mother Goddess” in Turkey",
+    author: "Jesse Holth",
+    category: "Art",
+    content: """
+      Archaeologists in Turkey have uncovered an 1,800-year-old statue in the ancient city of Metropolis, known as “City of the Mother Goddess.” The marble figure of a robed woman standing on a pedestal is missing a head and both arms—which were likely attached separately—but is otherwise well preserved. The Turkish Culture and Tourism Ministry’s Department of Excavations announced the news earlier this month, along with a video of their excavation work and views of the statue.
+
+The city of Metropolis, where the statue was discovered, is located in the Torbali region of Turkey’s İzmir Province near the western coast of Turkey, between the ancient cities of Ephesus and Smyrna (modern-day İzmir). It was first settled in the Neolithic period (roughly 10,000 B.C.E. through 1900 B.C.E.), with later inhabitants arriving during the Classical, Hellenistic, Roman, Byzantine, and Ottoman eras.
+
+During the Bronze Age (approximately 3300 B.C.E. to 1200 B.C.E.), Metropolis (then called Puranda) was part of the Hittite’s Arzawa kingdom. A seal bearing Hittite hieroglyphs that was discovered in the city’s acropolis, which was studied by Andreas Schachner and Recep Meriç in 2000, has yet to be deciphered.
+
+In the Hellenistic period (323 B.C.E. to 31 B.C.E.), the area surrounding Metropolis was ruled by the kingdom of Pergamum. During this time, they built a temple to honor the Greek god of war Ares—one of only two temples from Pergamum dedicated to the god in existence today—and a restored ancient Greek amphitheater, where archaeologists uncovered a marble “seat of honor” flanked with griffins in 1995.
+
+Excavations on the city of Metropolis have been ongoing for 30 years, with archaeologists finding over 11,000 artifacts dating to various historical periods, including coins, glass, ceramics, figurines, sculptures, and many bone, ivory, and metal artifacts. Notable finds within the city include elaborate Roman baths featuring sculptures of Thyke and Zeus, as well as gladiator figures, and four monumental cisterns in the acropolis that would have been large enough to hold 600 tons of water for the city. In addition to the temple and the amphitheater, a range of buildings have also been uncovered, from a sports complex to an assembly building, and various shops, avenues, galleries, and public toilets.
+      
+      """,
+    discription:
+        "Archaeologists in Turkey have uncovered an 1,800-year-old statue in the ancient city of Metropolis.",
+    featuredImage:
+        "https://www.artnews.com/wp-content/uploads/2021/06/Screen-Shot-2021-06-23-at-3.42.55-PM.png",
+    views: 568,
+    time: DateTime(2021, 24, 23, 41),
+  ),
+  Article(
+    title:
+        "Artificial Intelligence Restores Mutilated Rembrandt Painting ‘The Night Watch’",
+    author: "Shanti Escalante",
+    category: "Art",
+    content: """
+      One of Rembrandt’s finest works, Militia Company of District II under the Command of Captain Frans Banninck Cocq (better known as The Night Watch) from 1642, is a prime representation of Dutch Golden Age painting. But the painting was greatly disfigured after the artist’s death, when it was moved from its original location at the Arquebusiers Guild Hall to Amsterdam’s City Hall in 1715. City officials wanted to place it in a gallery between two doors, but the painting was too big to fit. Instead of finding another location, they cut large panels from the sides as well as some sections from the top and bottom. The fragments were lost after removal.
+
+      Now, centuries later, the painting  has been made complete through the use of artificial intelligence. The Rijksmuseum in the Netherlands has owned The Night Watch since it opened in 1885 and considers it one of the best-known paintings in its collection. In 2019, the museum embarked on a multi-year, multi-million-dollar restoration project, referred to as Operation Night Watch, to recover the painting. The effort marks the 26th restoration of the work over the span of its history.
+
+In the beginning, restoring The Night Watch to its original size hadn’t been considered until the eminent Rembrandt scholar Erst van der Wetering suggested it in a letter to the museum, noting that the composition would change dramatically. The museum tapped its senior scientist, Rob Erdmann, to head the effort using three primary tools: the remaining preserved section of the original painting, a 17th-century copy of the original painting attributed to Gerrit Lundens that had been made before the cuts, and AI technology. 
+
+About the decision to use AI to reconstruct the missing pieces instead of commissioning an artist to repaint the work, Erdmann told ARTnews, “There’s nothing wrong with having an artist recreate [the missing pieces] by looking at the small copy, but then we’d see the hand of the artist there. Instead, we wanted to see if we could do this without the hand of an artist. That meant turning to artificial intelligence.” 
+
+AI was used to solve a set of specific problems, the first of which was that the copy made by Lundens is one-fifth the size of the original, which measures almost 12 feet in length. The other issue was that Lundens painted in a different style than Rembrandt, which raised the question of how the missing pieces could be restored to an approximation of how Rembrandt would have painted them. Erdmann created three separate neural networks, a type of machine learning technology that trains computers to learn how to do specific tasks to address the problems.
+
+      """,
+    discription:
+        "Now, centuries later, the painting  has been made complete through the use of artificial intelligence.",
+    featuredImage:
+        "https://www.artnews.com/wp-content/uploads/2021/06/Reinier-Gerritsen-proefhanging-e1624469161595.jpg",
+    views: 784,
+    time: DateTime(2021, 26, 10, 47),
+  ),
+  Article(
+    title:
+        "For some dinosaurs, the Arctic may have been a great place to raise a family",
+    author: "Nikk Ogasa",
+    category: "Science",
+    content: """
+      Dinosaurs didn’t just summer in the high Arctic; they may have lived there year-round, new fossil evidence suggests.
+
+Hundreds of bones and teeth found along the Colville River in northern Alaska belonged to dinosaur hatchlings, researchers say. The remains, which fell from outcroppings of the Prince Creek Formation, represent seven dinosaur families including tyrannosaurs, duck-billed hadrosaurs and horned and frilled ceratopsids.
+
+“These are the northernmost [non-avian] dinosaurs that we know of,” says paleontologist Patrick Druckenmiller of the University of Alaska Museum of the North in Fairbanks. And now it’s clear they’re not just migrating into polar latitudes, he says. “They’re actually nesting and laying and incubating eggs … practically at the North Pole.”
+
+Some of these dinosaurs incubated their eggs for up to six months, previous evidence suggests (SN: 1/23/17). That would have left little time for any dinos nesting in the Arctic to migrate south before winter set in, Druckenmiller and colleagues report online June 24 in Current Biology. And any offspring would have struggled to make the long journey.
+
+The Arctic was slightly warmer during the dinos’ lifetime than it is today. Between around 80 million and 60 million years ago, the region had an average annual temperature of about 6˚ Celsius — similar to that of modern-day Ottawa — fossilized plants from the Prince Creek Formation indicate. Still, overwintering dinosaurs would have endured months of darkness, cold temperatures and even snowfall, Druckenmiller says.
+
+They may have fought the cold with insulating feathers or some degree of warm-bloodedness (SN: 4/4/12); SN: 6/13/14), and the herbivores may have hibernated or eaten rotten vegetation when fresh food diminished in the dark months, Druckenmiller speculates. Finding these baby dino fossils unearthed more questions than answers, he admits. “We’ve opened a whole can of worms.”
+
+
+      """,
+    discription:
+        "Fossil baby teeth and bones hint that some dinosaurs reared their young near the North Pole",
+    featuredImage:
+        "https://www.sciencenews.org/wp-content/uploads/2021/06/062321_NO_arctic-dinos_feat.jpg",
+    views: 446,
+    time: DateTime(2021, 24, 5, 16),
+  ),
+  Article(
+    title:
+        "Any aliens orbiting these 2,000 stars could spot Earth crossing the sun",
+    author: "Lisa Grossman",
+    category: "Science",
+    content: """
+      Astronomers look for distant planets by watching for the shadow the worlds cast when passing between their star and Earth. If any aliens are searching for other intelligent life, they could spot us using the same trick.
+
+Now, scientists have identified 1,715 star systems whose hypothetical inhabitants could have seen Earth cross in front of the sun sometime in the last 5,000 years. Another 319 stars will come into the right positions for spotting Earth in the next 5,000 years, astrophysicist Jackie Faherty and astronomer Lisa Kaltenegger report in the June 23 Nature.
+
+Those 2,034 stars had or will have “the front row seat to finding Earth as a transiting planet,” says Faherty, of the American Museum of Natural History in New York City.
+
+Seventy-five of the stars are close enough that human-made radio waves have already reached them, and seven of those stars have potentially habitable planets.
+
+Faherty and Kaltenegger, of Cornell University, used maps of more than 1 billion stars from the European Space Agency’s Gaia spacecraft, which measures stars’ movements and distances from Earth. The researchers identified the Earth transit zone, the region of space from which stars can see Earth cross the sun, and ran the clock backward and forward to see stars move in and out of that zone. “The way I think about this is, ‘Where are we the aliens?’” Kaltenegger says.
+
+Previous research identified stars that can currently see Earth silhouetted against the sun (SN: 4/20/16). But those studies did not take into account stellar movements through space and time. The new work shows that most star systems with a good look at Earth will keep that view for thousands of years.
+      """,
+    discription:
+        "They would find the planet the way astronomers here detect exoplanets",
+    featuredImage:
+        "https://www.sciencenews.org/wp-content/uploads/2021/06/062221_lg_earth-from-space_feat.jpg",
+    views: 946,
+    time: DateTime(2021, 24, 15, 6),
+  ),
 ];
 
 Article newsOfTheDay = Article(
@@ -275,6 +422,3 @@ According to Blue Origin's website the company plans to launch its passengers mo
   views: 15,
   time: DateTime(2021, 6, 7, 19, 41),
 );
-
-Iterable<Article> healthArticles =
-    articleList.where((health) => health.category.contains('Health'));
