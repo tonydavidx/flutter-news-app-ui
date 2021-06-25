@@ -11,18 +11,18 @@ class MyBottomNavigation extends StatelessWidget {
   Widget build(BuildContext context) {
     return BottomNavigationBar(
         onTap: (value) {
-          if (value == 1) {
+          if (value == 0) {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (BuildContext context) => SearchPage(),
+                builder: (BuildContext context) => HomePage(),
               ),
             );
-          } else if (value == 0) {
+          } else if (value == 1) {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => HomePage(),
+                builder: (context) => SearchPage(),
               ),
             );
           }

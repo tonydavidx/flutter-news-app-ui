@@ -1,3 +1,5 @@
+import 'package:news_app_ui/screens/screen.dart';
+
 import '../model/news.dart';
 import 'package:flutter/material.dart';
 import 'package:jiffy/jiffy.dart';
@@ -31,14 +33,22 @@ SliverToBoxAdapter buildBreakingNewsContainer() {
           ),
           Container(
             height: 360,
-            // color: Colors.amber,
             child: ListView.builder(
-                itemCount: articleList.length,
-                scrollDirection: Axis.horizontal,
-                shrinkWrap: true,
-                itemBuilder: (context, index) {
-                  final articles = articleList[index];
-                  return Container(
+              itemCount: articleList.length,
+              scrollDirection: Axis.horizontal,
+              shrinkWrap: true,
+              itemBuilder: (context, index) {
+                final articles = articleList[index];
+                return InkWell(
+                  onTap: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => ArticlePage(
+                        article: articles,
+                      ),
+                    ),
+                  ),
+                  child: Container(
                     width: 290,
                     child: Padding(
                       padding: const EdgeInsets.all(16.0),
@@ -94,8 +104,10 @@ SliverToBoxAdapter buildBreakingNewsContainer() {
                         ],
                       ),
                     ),
-                  );
-                }),
+                  ),
+                );
+              },
+            ),
           )
         ],
       ),

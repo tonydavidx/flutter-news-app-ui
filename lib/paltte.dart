@@ -12,3 +12,9 @@ const kBoldHeading = TextStyle(
   fontWeight: FontWeight.w800,
   color: Colors.black87,
 );
+
+const kLabelText = TextStyle(
+  fontSize: 18,
+  fontWeight: FontWeight.w600,
+  color: Colors.white,
+);

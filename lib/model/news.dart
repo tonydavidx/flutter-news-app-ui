@@ -15,6 +15,18 @@ class Article {
   });
 }
 
+List healthArticles =
+    articleList.where((element) => element.category == "Health").toList();
+
+List politicsArticles =
+    articleList.where((element) => element.category == "Politics").toList();
+
+List artArticles =
+    articleList.where((element) => element.category == "Art").toList();
+
+List scienceArticles =
+    articleList.where((element) => element.category == "Science").toList();
+
 List<Article> articleList = [
   Article(
     content: """
@@ -337,7 +349,7 @@ AI was used to solve a set of specific problems, the first of which was that the
     featuredImage:
         "https://www.artnews.com/wp-content/uploads/2021/06/Reinier-Gerritsen-proefhanging-e1624469161595.jpg",
     views: 784,
-    time: DateTime(2021, 26, 10, 47),
+    time: DateTime(2021, 25, 10, 47),
   ),
   Article(
     title:
