@@ -33,7 +33,9 @@ class SearchPage extends StatelessWidget {
             ),
             SliverToBoxAdapter(
               child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20),
+                padding: const EdgeInsets.only(
+                  left: 20,
+                ),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -44,7 +46,10 @@ class SearchPage extends StatelessWidget {
                     SizedBox(
                       height: 50,
                     ),
-                    SearchBox(),
+                    Padding(
+                      padding: EdgeInsets.only(right: 20),
+                      child: SearchBox(),
+                    ),
                     SizedBox(
                       height: 30,
                     ),
@@ -108,7 +113,6 @@ class SearchPage extends StatelessWidget {
           ),
         ),
       ),
-      bottomNavigationBar: MyBottomNavigation(),
     );
   }
 }

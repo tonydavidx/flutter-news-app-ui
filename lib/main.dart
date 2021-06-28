@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import './screens/screen.dart';
+import 'package:flutter/services.dart';
+import 'screens/_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -8,13 +9,19 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter News App',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
+    return AnnotatedRegion<SystemUiOverlayStyle>(
+      value: SystemUiOverlayStyle.light,
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'Flutter News App',
+        theme: ThemeData(
+          appBarTheme: AppBarTheme(
+            brightness: Brightness.dark,
+          ),
+          primarySwatch: Colors.blue,
+        ),
+        home: Home(),
       ),
-      home: HomePage(),
     );
   }
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:jiffy/jiffy.dart';
+import 'package:news_app_ui/screens/_screen.dart';
+import 'package:timeago/timeago.dart' as timeago;
 import 'package:news_app_ui/paltte.dart';
 
 class ArticleListBuilder extends StatelessWidget {
@@ -17,80 +18,89 @@ class ArticleListBuilder extends StatelessWidget {
         itemCount: articles.length,
         itemBuilder: (context, index) {
           final article = articles[index];
-          return Padding(
-            padding: const EdgeInsets.symmetric(
-              vertical: 10,
+          return InkWell(
+            borderRadius: BorderRadius.circular(12),
+            onTap: () => Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => ArticlePage(article: article),
+              ),
             ),
-            child: Row(
-              children: [
-                Container(
-                  margin: EdgeInsets.only(right: 16),
-                  height: 80,
-                  width: 80,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(8),
-                    image: DecorationImage(
-                      image: NetworkImage(article.featuredImage),
-                      fit: BoxFit.cover,
-                    ),
-                  ),
-                ),
-                Expanded(
-                  child: Container(
+            child: Padding(
+              padding: const EdgeInsets.symmetric(
+                vertical: 10,
+              ),
+              child: Row(
+                children: [
+                  Container(
+                    margin: const EdgeInsets.only(right: 16),
                     height: 80,
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text(
-                          article.title,
-                          style: kBoldHeading.copyWith(fontSize: 17),
-                        ),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Row(
-                              children: [
-                                Icon(
-                                  Icons.access_time_rounded,
-                                  size: 15,
-                                  color: kLightGrey,
-                                ),
-                                SizedBox(
-                                  width: 4,
-                                ),
-                                Text(
-                                  Jiffy(article.time).fromNow().toString(),
-                                  style: kTextLightGrey,
-                                ),
-                              ],
-                            ),
-                            Row(
-                              children: [
-                                Icon(
-                                  Icons.remove_red_eye_outlined,
-                                  size: 15,
-                                  color: kLightGrey,
-                                ),
-                                SizedBox(
-                                  width: 4,
-                                ),
-                                Text(
-                                  article.views.toString(),
-                                  style: kTextLightGrey,
-                                ),
-                                Text(
-                                  'views',
-                                  style: kTextLightGrey,
-                                ),
-                              ],
-                            ),
-                          ],
-                        )
-                      ],
+                    width: 80,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(8),
+                      image: DecorationImage(
+                        image: NetworkImage(article.featuredImage),
+                        fit: BoxFit.cover,
+                      ),
                     ),
                   ),
-                ),
-              ],
+                  Expanded(
+                    child: Container(
+                      height: 80,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(
+                            article.title,
+                            style: kBoldHeading.copyWith(fontSize: 18),
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Row(
+                                children: [
+                                  Icon(
+                                    Icons.access_time_rounded,
+                                    size: 15,
+                                    color: kLightGrey,
+                                  ),
+                                  SizedBox(
+                                    width: 4,
+                                  ),
+                                  Text(
+                                    timeago.format(article.time),
+                                    style: kTextLightGrey,
+                                  ),
+                                ],
+                              ),
+                              Row(
+                                children: [
+                                  Icon(
+                                    Icons.remove_red_eye_outlined,
+                                    size: 15,
+                                    color: kLightGrey,
+                                  ),
+                                  SizedBox(
+                                    width: 4,
+                                  ),
+                                  Text(
+                                    article.views.toString(),
+                                    style: kTextLightGrey,
+                                  ),
+                                  Text(
+                                    'views',
+                                    style: kTextLightGrey,
+                                  ),
+                                ],
+                              ),
+                            ],
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ),
           );
         },

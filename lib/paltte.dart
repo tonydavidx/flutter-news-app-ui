@@ -4,7 +4,7 @@ final kLightGrey = Colors.grey[500];
 final kLightGrey2 = Colors.grey[400];
 
 final kTextLightGrey = TextStyle(
-  color: Colors.grey[500],
+  color: Colors.grey.shade500,
 );
 
 const kBoldHeading = TextStyle(
@@ -15,6 +15,12 @@ const kBoldHeading = TextStyle(
 
 const kLabelText = TextStyle(
   fontSize: 18,
-  fontWeight: FontWeight.w600,
+  fontWeight: FontWeight.w700,
   color: Colors.white,
+);
+
+const kLabelblack = TextStyle(
+  fontSize: 14,
+  fontWeight: FontWeight.w700,
+  color: Colors.black,
 );
