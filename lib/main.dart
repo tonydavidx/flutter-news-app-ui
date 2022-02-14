@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
         title: 'Flutter News App',
         theme: ThemeData(
           appBarTheme: AppBarTheme(
-            brightness: Brightness.dark,
+            systemOverlayStyle: SystemUiOverlayStyle.dark,
           ),
           primarySwatch: Colors.blue,
         ),
